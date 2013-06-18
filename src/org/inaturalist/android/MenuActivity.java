@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 public class MenuActivity extends ListActivity {
     public static String TAG = "MenuActivity";
-    static final List<Map> MENU_ITEMS;
+    static final List<Map<String, String>> MENU_ITEMS;
     static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1;
     private Button mAddObservationButton;
     private Button mTakePictureButton;
@@ -30,7 +30,7 @@ public class MenuActivity extends ListActivity {
     private ActivityHelper mHelper;
     
     static {
-        MENU_ITEMS = new ArrayList<Map>();
+        MENU_ITEMS = new ArrayList<Map<String, String>>();
         Map<String,String> map;
         
         map = new HashMap<String,String>();
